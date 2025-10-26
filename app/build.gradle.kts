@@ -46,6 +46,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation("de.hdodenhof:circleimageview:3.1.0")
 
     // Import Firebase BoM (Bill of Materials)
     // Pastikan versi BOM sudah didefinisikan di file libs.versions.toml Anda
