@@ -10,6 +10,11 @@
 
 ## 3. Deskripsi Singkat Aplikasi
 Makan Yuk adalah aplikasi mobile berbasis Android (Native) yang menghubungkan pengguna dengan berbagai makanan di Kota Jambi. Aplikasi ini memungkinkan pengguna untuk melihat menu, memesan makanan, melakukan pembayaran (COD/Digital), dan melacak status pesanan secara real-time. Proyek ini terdiri dari dua aplikasi: **Aplikasi Pelanggan** dan **Aplikasi Admin Restoran**.
+### requirement Aplikasi
+* Android OS 6.0+
+* Snapdragon 425 or above
+* 2GB ram
+* 100 MB Space
 
 ## 4. Tujuan Sistem / Permasalahan yang Diselesaikan
 * **Permasalahan:** Kesulitan memesan makanan dari warung lokal tanpa harus datang ke lokasi, serta kebutuhan pemilik warung untuk mengelola pesanan digital.
@@ -37,6 +42,12 @@ Makan Yuk adalah aplikasi mobile berbasis Android (Native) yang menghubungkan pe
 1.  Hubungkan HP Android via USB (Debugging on) atau gunakan Emulator.
 2.  Klik tombol **Run (Play)** di Android Studio.
 3.  Pastikan koneksi internet aktif karena aplikasi menggunakan Firebase.
+
+### c. Cara Instal
+1. Download aplikasi melalui link yang sudah disiapkan
+2. Klik instal.
+3. Jika ada peringatan dari google untuk pindai aplikasi, klik "pindai".
+4. Setelah selesai pindai klik instal.
 
 ## 7. Akun Demo
 
