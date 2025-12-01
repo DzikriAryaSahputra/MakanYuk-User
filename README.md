@@ -74,14 +74,14 @@ Untuk pengujian, dapat menggunakan akun berikut:
 * **Keterbatasan Sistem:**
     * Pembayaran Virtual Account masih berupa simulasi dan user harus input manual (belum terintegrasi Payment Gateway).
     * Peta lokasi masih menggunakan input teks manual, belum menggunakan Google Maps API (menghindari biaya billing).
-    * Upload gambar masih menggunakan imageUrl.
+    * Upload gambar masih menggunakan imageUrl (menghindari biaya billing).
 * **Petunjuk Penting:**
     * Jika ingin mencoba atau clone aplikasi mohon untuk download file API KEY "google-service.json" melalui link berikut:
     * **Link Download API KEY:** [https://drive.google.com/file/d/1B8Wc-UARzAmjKazhs4Fpj8DmctfpBdEv/view?usp=drive_link]
 
 ## 11. Keterangan Tugas
 Project ini ditujukan untuk memenuhi **Tugas Final Project Mata Kuliah Rekayasa Perangkat Lunak**.
-**Dosen Pengampu:** [Dila Nurlaila, M.Kom]
+**Dosen Pengampu:** Dila Nurlaila, M.Kom
 
 ---
 Copyright © 2025 Kelompok 3 - Makan Yuk
