@@ -69,6 +69,7 @@ Untuk pengujian, dapat menggunakan akun berikut:
 ## 9. Screenshot Halaman Utama
 
 <img src="screenshots/home_user.jpeg" width="250">
+<img src="screenshots/home_admin.jpeg" width="250">
 
 ## 10. Catatan Tambahan
 * **Keterbatasan Sistem:**
