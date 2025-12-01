@@ -28,7 +28,7 @@ Makan Yuk adalah aplikasi mobile berbasis Android (Native) yang menghubungkan pe
 ## 6. Cara Menjalankan Aplikasi
 
 ### a. Cara Instalasi (Developer Mode)
-1.  Clone repository aplikasi user ini: `git clone [LINK_REPOSITORY_ANDA]`
+1.  Clone repository aplikasi user ini: `git clone [https://github.com/DzikriAryaSahputra/MakanYuk-User.git]`
 2.  Buka project di **Android Studio**.
 3. **PENTING:** Tambahkan file `google-services.json` ke dalam folder `app/`. (File ini tidak disertakan di repo demi keamanan).
 4. Biarkan Gradle melakukan *sync*.
@@ -66,7 +66,7 @@ Untuk pengujian, dapat menggunakan akun berikut:
     * Upload gambar masih menggunakan imageUrl.
 * **Petunjuk Penting:**
     * Jika ingin mencoba atau clone aplikasi mohon untuk download file API KEY "google-service.json" melalui link berikut:
-    * **Link Download API KEY:** [https://www.mediafire.com/file/9bxyqul9njnafpt/AdminMakanYuk_v1.0.apk/file]
+    * **Link Download API KEY:** [https://drive.google.com/file/d/1B8Wc-UARzAmjKazhs4Fpj8DmctfpBdEv/view?usp=drive_link]
 
 ## 11. Keterangan Tugas
 Project ini ditujukan untuk memenuhi **Tugas Final Project Mata Kuliah Rekayasa Perangkat Lunak**.
