@@ -14,19 +14,48 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DeliveryFood">
         <activity
-            android:name=".DetailActivity"
+            android:name="activities.DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".ForgetActivity"
+            android:name="activities.ForgetActivity"
             android:exported="false" />
         <activity
-            android:name=".SignActivity"
+            android:name="activities.SignActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name="activities.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".Splash_Screen"
+            android:name="activities.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="activities.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="activities.SelectAvatarActivity"
+            android:exported="false" />
+        <activity
+            android:name="activities.AddressActivity"
+            android:exported="false" />
+        <activity
+            android:name="activities.HelpCenterActivity"
+            android:exported="false" />
+        <activity
+            android:name="activities.AddAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name="activities.CheckoutActivity"
+            android:exported="false" />
+        <activity android:name="activities.DetailOrderActivity" />
+        <activity
+            android:name="activities.SuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name="activities.PaymentInstructionsActivity"
+            android:exported="false" />
+        <activity android:name="activities.MyOrdersActivity" />
+        <activity
+            android:name="activities.Splash_Screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,11 +64,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="activities.MainActivity"
             android:exported="true" />
         <activity
-            android:name=".CartActivity"
+            android:name="activities.CartActivity"
             android:exported="false" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

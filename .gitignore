@@ -17,3 +17,7 @@ app/google-services.json
 .externalNativeBuild
 .cxx
 local.properties
+
+# Firebase Config
+google-services.json
+app/google-services.json

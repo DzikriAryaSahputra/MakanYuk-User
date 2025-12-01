@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/checkoutItemQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qty_background_checkout"
+        android:textColor="#F57C00"
+        android:textStyle="bold"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        tools:text="1x" />
+
+    <TextView
+        android:id="@+id/checkoutItemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:fontFamily="@font/poppins"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/black"
+        tools:text="Nasi Goreng Spesial" />
+
+    <TextView
+        android:id="@+id/checkoutItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/black"
+        tools:text="Rp25.000" />
+</LinearLayout>

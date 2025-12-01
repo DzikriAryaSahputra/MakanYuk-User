@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context="activities.CheckoutActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageButton
+                android:id="@+id/backButtonCheckout"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="start|center_vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@color/orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Checkout"
+                android:textColor="#F57C00"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonCreateOrder"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="24dp"
+        android:background="@drawable/buttonshape_orange"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Buat Pesanan"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCreateOrder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView style="@style/EditProfileLabel" android:text="Alamat Pengiriman"/>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:layout_marginTop="8dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/checkoutIconLocation"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_location_pin"
+                        app:tint="#F57C00"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/checkoutAddressLabel"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkoutAddressLabel"
+                        android:contentDescription="Ikon Alamat" />
+
+                    <TextView
+                        android:id="@+id/checkoutAddressLabel"
+                        style="@style/ProfileOptionText"
+                        android:textColor="#F57C00"
+                        tools:text="Rumah (Utama)"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/checkoutAddressDetails"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:textSize="14sp"
+                        app:layout_constraintTop_toBottomOf="@id/checkoutAddressLabel"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/checkoutChangeAddressButton"
+                        tools:text="Dzikri Arya (08123...) - Jl. Merpati No. 12, Suka Maju..."/>
+
+                    <Button
+                        android:id="@+id/checkoutChangeAddressButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Ganti"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView style="@style/EditProfileLabel" android:text="Ringkasan Pesanan" android:layout_marginTop="24dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/checkoutRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_checkout"
+                tools:itemCount="2"/>
+
+            <TextView style="@style/EditProfileLabel" android:text="Metode Pembayaran" android:layout_marginTop="24dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/paymentCardCOD"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="#F57C00"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp">
+                        <ImageView
+                            android:id="@+id/codIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_cod"
+                            app:tint="#F57C00"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cash (COD)"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/paymentCardVA"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#E0E0E0"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp">
+                        <ImageView
+                            android:id="@+id/vaIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_virtual_account2"
+                            app:tint="#757575"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Virtual Account"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <TextView style="@style/EditProfileLabel" android:text="Rincian Pembayaran" android:layout_marginTop="24dp"/>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                android:layout_marginTop="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:text="Subtotal" android:layout_alignParentStart="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <TextView android:id="@+id/checkoutSubtotal" android:layout_alignParentEnd="true" android:layout_width="wrap_content" android:layout_height="wrap_content" tools:text="Rp190.000"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                        <TextView android:text="Ongkos Kirim" android:layout_alignParentStart="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <TextView android:id="@+id/checkoutDeliveryFee" android:layout_alignParentEnd="true" android:layout_width="wrap_content" android:layout_height="wrap_content" tools:text="Rp10.000"/>
+                    </RelativeLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F0F0" android:layout_marginVertical="12dp"/>
+
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:text="Total Pembayaran" android:textStyle="bold" android:textColor="@color/black" android:layout_alignParentStart="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <TextView android:id="@+id/checkoutTotal" android:layout_alignParentEnd="true" android:layout_width="wrap_content" android:layout_height="wrap_content" tools:text="Rp200.000" android:textStyle="bold" android:textColor="#F57C00" android:textSize="18sp"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView> </androidx.constraintlayout.widget.ConstraintLayout>

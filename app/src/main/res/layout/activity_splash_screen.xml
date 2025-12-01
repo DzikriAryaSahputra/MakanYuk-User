@@ -5,48 +5,78 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8F4F4"
-    android:textAlignment="center"
-    tools:context=".Splash_Screen">
+    android:background="@drawable/gradient_background"
+    tools:context="activities.Splash_Screen">
 
+    <View
+        android:id="@+id/topCircle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:alpha="0.1"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="-80dp"
+        android:layout_marginStart="-80dp"/>
+
+    <View
+        android:id="@+id/bottomCircle"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:alpha="0.1"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="-100dp"
+        android:layout_marginEnd="-100dp"/>
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="428dp"
-        android:layout_height="520dp"
+        android:id="@+id/logoSplash"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="Logo MakanYuk"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.214"
-        app:srcCompat="@drawable/makanyukicon" />
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat="@drawable/makanyuk" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/taglineSplash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed"
-        android:text="© 2025 Github/DzikriAryaSahputra"
-        android:textColor="@color/black"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.945" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Delicious food for everyone"
+        android:textColor="@color/orange"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:letterSpacing="0.02"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.628" />
+        app:layout_constraintTop_toBottomOf="@+id/logoSplash" />
+
+    <ProgressBar
+        android:id="@+id/progressBarSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:indeterminateTint="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taglineSplash" />
+
+    <TextView
+        android:id="@+id/versionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/poppins"
+        android:text="Versi 1.0.0"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

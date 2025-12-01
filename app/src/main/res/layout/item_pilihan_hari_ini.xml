@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginBottom="8dp"
-            android:fontFamily="@font/montserrat_bold"
+            android:fontFamily="@font/poppins_semibold"
             android:shadowColor="#000000"
             android:shadowRadius="1"
             android:text="Nasi Goreng"

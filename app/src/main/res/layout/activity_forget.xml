@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:padding="24dp"
     android:background="#F9F7F9"
-    tools:context="ForgetActivity">
+    tools:context="activities.ForgetActivity">
 
     <ImageButton
         android:id="@+id/backButton"
@@ -27,8 +27,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
         android:layout_marginTop="8dp"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/poppins_bold"
         android:text="Reset Kata Sandi"
+        android:textStyle="bold"
         android:textColor="@color/orange"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Lupa Kata Sandi Anda?"
         android:textColor="@color/orange"
         android:textSize="24sp"
@@ -51,7 +52,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:fontFamily="@font/lato"
+        android:fontFamily="@font/poppins"
         android:text="Jangan khawatir! Masukkan email Anda yang terdaftar dan kami akan mengirimkan tautan untuk mengatur ulang kata sandi Anda."
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,7 +78,7 @@
         android:layout_height="55dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/buttonshape"
-        android:fontFamily="@font/roboto_bold"
+        android:fontFamily="@font/poppins_bold"
         android:text="Kirim Link Reset"
         android:textColor="@color/white"
         android:textSize="20sp"

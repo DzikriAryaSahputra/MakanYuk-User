@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".DetailActivity">
+    tools:context="activities.DetailActivity">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -46,7 +46,7 @@
                     android:id="@+id/detailMenuName"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_bold"
+                    android:fontFamily="@font/poppins_bold"
                     android:text="Ayam Goreng Yaruu"
                     android:textColor="#F57C00"
                     android:textSize="26sp"
@@ -59,7 +59,7 @@
                     android:id="@+id/detailPrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_bold"
+                    android:fontFamily="@font/poppins_semibold"
                     android:text="Rp. 25.000"
                     android:textColor="#F57C00"
                     android:textSize="20sp"
@@ -83,6 +83,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4.5"
+                    android:fontFamily="@font/poppins_semibold"
                     android:layout_marginStart="4dp"
                     app:layout_constraintStart_toEndOf="@id/starIcon"
                     app:layout_constraintTop_toTopOf="@id/starIcon"
@@ -101,7 +102,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:fontFamily="@font/montserrat_bold"
+                    android:fontFamily="@font/poppins_medium"
                     android:text="Ayam Goreng"
                     android:textColor="@color/orange"
                     android:textSize="18sp"
@@ -112,9 +113,9 @@
                 <TextView
                     android:id="@+id/detailMenuDescription"
                     android:layout_width="0dp"
-                    android:fontFamily="@font/lato_bold"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins"
                     android:lineSpacingExtra="4dp"
                     android:text="Cari ayam goreng yang sempurna? Anda menemukannya. Rasakan sensasi renyah kulitnya yang pecah di mulut, diikuti oleh daging ayam yang gurih dan lembut."
                     android:textSize="14sp"
@@ -127,7 +128,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
-                    android:fontFamily="@font/montserrat_bold"
+                    android:fontFamily="@font/poppins_medium"
                     android:text="Sesuaikan Selera Anda"
                     android:textColor="@color/orange"
                     android:textSize="18sp"
@@ -140,7 +141,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="Varian"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text=" Varian"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/variantSubtitle" />
@@ -232,6 +234,7 @@
             android:layout_weight="1"
             android:layout_marginStart="8dp"
             android:background="@drawable/buttonshape_orange"
+            android:fontFamily="@font/poppins_bold"
             android:text="Beli Sekarang"
             android:textColor="@color/white"/>
 

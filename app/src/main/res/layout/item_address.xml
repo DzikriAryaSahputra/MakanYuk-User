@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/addressLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="#F57C00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Rumah" />
+
+        <TextView
+            android:id="@+id/defaultAddressTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/price_background"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="Utama"
+            android:textColor="#F57C00"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/addressLabelTextView"
+            app:layout_constraintStart_toEndOf="@+id/addressLabelTextView"
+            app:layout_constraintTop_toTopOf="@+id/addressLabelTextView"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/addressRecipientName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addressLabelTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Dzikri Arya Sahputra" />
+
+        <TextView
+            android:id="@+id/addressPhoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addressRecipientName"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="08123456789" />
+
+        <TextView
+            android:id="@+id/addressFullDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addressPhoneNumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Jl. Merpati No. 12, RT 01 RW 02, Kel. Suka Maju, Kec. Maju Jaya, Kota Jambi, 36123" />
+
+        <ImageButton
+            android:id="@+id/deleteAddressButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Hapus Alamat"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="#D32F2F" />
+
+        <ImageButton
+            android:id="@+id/editAddressButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Edit Alamat"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintEnd_toStartOf="@+id/deleteAddressButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="#0D47A1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

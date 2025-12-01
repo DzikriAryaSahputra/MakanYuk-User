@@ -30,6 +30,7 @@
             android:layout_height="wrap_content"
             android:text="4.5 • 25 mins"
             android:textSize="12sp"
+            android:fontFamily="@font/poppins"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
-            android:fontFamily="@font/montserrat_bold"
+            android:fontFamily="@font/poppins_semibold"
             android:text="Nasi Goreng Spesial"
             android:textColor="@color/orange"
             android:textSize="16sp"
@@ -54,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
-            android:fontFamily="@font/lato_bold"
+            android:fontFamily="@font/poppins_medium"
             android:text="Nasi goreng dengan ayam, udang, dan sayuran"
             android:textSize="12sp"
             app:layout_constraintEnd_toStartOf="@+id/imageViewMenu"
@@ -72,6 +73,7 @@
             android:paddingEnd="12dp"
             android:paddingBottom="6dp"
             android:text="Rp 25.000"
+            android:fontFamily="@font/poppins_semibold"
             android:textColor="#F57C00"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
