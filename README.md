@@ -15,6 +15,19 @@ Makan Yuk adalah aplikasi mobile berbasis Android (Native) yang menghubungkan pe
 * Snapdragon 425 or above
 * 2GB ram
 * 100 MB Space
+### Pola Arsitektur
+Arsitektur : N-Tier memisahkan sistem menjadi lapisan (tier) fisik atau logis yang berbeda
+1. Tier Client (Presentation Layer)
+* Aplikasi Pelanggan (Android): Digunakan oleh pelanggan untuk melihat menu dan memesan.
+* Aplikasi Admin Restoran (Android): Digunakan oleh pemilik restoran untuk mengelola menu dan pesanan.
+* Fungsi: Menangani antarmuka pengguna (UI) dan interaksi langsung dengan user.
+
+2. Tier Server & Database (Data & Logic Layer)
+* Firebase (Backend-as-a-Service): Bertindak sebagai server pusat.
+* Firebase Authentication: Mengurus login dan registrasi.
+* Cloud Firestore: Mengurus penyimpanan data (menu, pesanan).
+* Fungsi: Menangani keamanan data, penyimpanan, dan sinkronisasi data antar aplikasi klien.
+
 
 ## 4. Tujuan Sistem / Permasalahan yang Diselesaikan
 * **Permasalahan:** Kesulitan memesan makanan dari warung lokal tanpa harus datang ke lokasi, serta kebutuhan pemilik warung untuk mengelola pesanan digital.
